@@ -1,8 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('style.css');
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+header {
+    width: 100%;
+    padding: 28px 8%;
 }
 
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar-logo span {
+    font-size: 24px;
+    color: var(--cor-logo);
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: var(--cor-fonte);
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color: var(--cor-fonte);
+    border-bottom: 3px solid var(--cor-logo);
+}
